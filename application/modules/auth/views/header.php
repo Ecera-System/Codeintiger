@@ -9,13 +9,14 @@
 
 </head>
 <body>
+ 
+
 <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-5">
   <div class="container">
     <a class="navbar-brand" href="/ci">My MVC Framework</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <?php if(!$this->ion_auth->logged_in()):?>
@@ -27,7 +28,7 @@
       </li><?php else: ?>
       <?php if($this->ion_auth->is_admin()):?>
       	<li class="nav-item active">
-        <a class="nav-link" href="/ci/auth">Admin Panel</a>
+        <a class="nav-link" href="/ci/admin">Admin Panel</a>
       </li><?php endif;?>
       <li class="nav-item active mr-sm-1">
         <a class="nav-link btn btn-primary" href="/ci/auth/logout">Sign Out</a>

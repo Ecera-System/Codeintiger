@@ -119,7 +119,7 @@ class Auth extends CI_Controller {
 		}
 
 		$user = $this->ion_auth->user()->row();
-
+             
 		if ($this->form_validation->run() == false)
 		{
 			// display the form

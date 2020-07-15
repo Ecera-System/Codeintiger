@@ -27,7 +27,7 @@
       </li><?php else: ?>
       <?php if($this->ion_auth->is_admin()):?>
       	<li class="nav-item active">
-        <a class="nav-link" href="/ci/auth">Admin Panel</a>
+        <a class="nav-link" href="/ci/admin">Admin Panel</a>
       </li><?php endif;?>
       <li class="nav-item active mr-sm-1">
         <a class="nav-link btn btn-primary" href="/ci/auth/logout">Sign Out</a>
