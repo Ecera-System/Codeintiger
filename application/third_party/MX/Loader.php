@@ -43,7 +43,7 @@ class MX_Loader extends CI_Loader
 	/** Initialize the loader variables **/
 	public function initialize($controller = NULL)
 	{
-		/* set the module name */
+		
 		$this->_module = CI::$APP->router->fetch_module();
 
 		if ($controller instanceof MX_Controller)

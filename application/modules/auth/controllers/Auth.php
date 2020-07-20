@@ -177,7 +177,7 @@ class Auth extends CI_Controller {
 	// forgot password
 	function forgot_password()
 	{
-		// setting validation rules by checking whether identity is username or email
+	  
 		if($this->config->item('identity', 'ion_auth') != 'email' )
 		{
 		   $this->form_validation->set_rules('identity', $this->lang->line('forgot_password_identity_label'), 'required');
@@ -410,7 +410,8 @@ class Auth extends CI_Controller {
 
 	// create a new user
 	function create_user()
-    {
+    { if($this->settings->get_setting("allow_registration")!="Yes")
+          return show_error("Admin has closed new registrations for this site");
         $this->data['title'] = $this->lang->line('create_user_heading');
 
         

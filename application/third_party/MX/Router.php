@@ -23,7 +23,7 @@ require dirname(__FILE__).'/Modules.php';
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ * s
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
  * 
@@ -40,12 +40,13 @@ class MX_Router extends CI_Router
 	public $module;
 	private $located = 0;
 
+	 
+	
 	public function fetch_module()
 	{
 		return $this->module;
 	}
-
-	protected function _set_request($segments = array())
+protected function _set_request($segments = array())
 	{
 		if ($this->translate_uri_dashes === TRUE)
 		{
@@ -89,6 +90,7 @@ class MX_Router extends CI_Router
 	{
 		$this->_set_module_path($this->routes['404_override']);
 	}
+
 
 	protected function _set_default_controller()
 	{

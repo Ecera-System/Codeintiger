@@ -7,7 +7,7 @@ require_once "header.php";
 	<h1>Welcome to your own Custom PHP MVC Framework!!</h1><hr>
 	<h4> Custom built with features like authentication,admin panel, hmvc structure and much more.... </h4>
     <hr>
-    Get started buidling your own awesome website with built-in modules and libraries
+    <?php echo $this->settings->get_setting('site_description');?>
 </div>
 </div>
 </body>
