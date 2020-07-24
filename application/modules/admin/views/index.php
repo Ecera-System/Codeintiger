@@ -141,6 +141,11 @@
                                     <a href="">
                                         <i class="fas fa-plug"></i> Plugins <i class="fa arrow"></i>
                                     </a>
+                                    <ul class="sidebar-nav">
+                                        <li>
+                                            <a href="page"> Page Builder Plugin </a>
+                                        </li>
+                                    </ul>    	
                                 </li>
                                 
                             </ul>
