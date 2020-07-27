@@ -7,6 +7,6 @@
 			?>
 			<li class="mb-2"> <?php echo $k;?> <a class=" ml-3" href="admin/delSett/<?php echo $k;?>">Delete</a></li>
 		<?php }?>
-</ul> <a href="/ci/admin">Go Back</a>
+</ul> <a href="<?php echo base_url();?>admin">Go Back</a>
 </div>
 

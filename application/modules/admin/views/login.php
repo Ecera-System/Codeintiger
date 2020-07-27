@@ -8,8 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="/ci/css/vendor.css">
-        <link rel ="stylesheet" href ="/ci/css/app-red.css"><!-- Theme initialization -->
+        <link rel="stylesheet" href="<?php echo base_url();?>css/vendor.css">
+        <link rel ="stylesheet" href ="<?php echo base_url();?>css/app-red.css"><!-- Theme initialization -->
             </head>
     <body>
         <div class="auth">
@@ -42,7 +42,7 @@
                                     <input class="checkbox" id="remember" name ="remember" type="checkbox">
                                     <span>Remember me</span>
                                 </label>
-                                <a href="/ci/auth/forgot_password" class="forgot-btn pull-right">Forgot password?</a>
+                                <a href="<?php echo base_url();?>auth/forgot_password" class="forgot-btn pull-right">Forgot password?</a>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-block btn-primary">Login</button>

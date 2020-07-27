@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-dark bg-dark navbar-expand-md mb-5">
   <div class ="container"> 
-    <a class="navbar-brand" href="/ci">My MVC Framework</a>
+    <a class="navbar-brand" href="<?php echo base_url()?>">My MVC Framework</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -22,17 +22,17 @@
     <ul class="navbar-nav ml-auto">
       <?php if(!$this->ion_auth->logged_in()):?>
       	<li class="nav-item active">
-        <a class="nav-link btn px-3 btn-primary" href="/ci/auth/login">Sign In <span class="sr-only"></span></a>
+        <a class="nav-link btn px-3 btn-primary" href="<?php echo base_url();?>auth/login">Sign In <span class="sr-only"></span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/ci/auth/create_user">Register <span class="sr-only"></span></a>
+        <a class="nav-link" href="<?php echo base_url();?>auth/create_user">Register <span class="sr-only"></span></a>
       </li><?php else: ?>
       <?php if($this->ion_auth->is_admin()):?>
       	<li class="nav-item active">
-        <a class="nav-link" href="/ci/admin">Admin Panel</a>
+        <a class="nav-link" href="<?php echo base_url();?>admin">Admin Panel</a>
       </li><?php endif;?>
       <li class="nav-item active mr-sm-1">
-        <a class="nav-link btn btn-primary" href="/ci/auth/logout">Sign Out</a>
+        <a class="nav-link btn btn-primary" href="<?php echo base_url();?>auth/logout">Sign Out</a>
       </li><?php endif;?>
       
   </div></ul></div></div></nav>

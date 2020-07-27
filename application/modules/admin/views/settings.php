@@ -19,7 +19,7 @@
     <button type="submit" class="btn btn-primary">Save your settings</button>
 
 </form>
-<a href="/ci/admin"><button class="btn btn-danger ml-3">Go Back</button></a>
+<a href="<?php echo base_url();?>admin"><button class="btn btn-danger ml-3">Go Back</button></a>
 </div>
 </body>
 </html>

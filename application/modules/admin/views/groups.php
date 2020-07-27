@@ -20,7 +20,7 @@
             <td>
                 <a href="group_permissions/<?php echo $group->id; ?>">Manage Permissions</a>
             </td>
-            <td> <a href ="/ci/auth/edit_group/<?php echo $group->id;?>">Edit</a>
+            <td> <a href ="<?php echo base_url();?>auth/edit_group/<?php echo $group->id;?>">Edit</a>
             </td>
         </tr>
     <?php endforeach; ?>

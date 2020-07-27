@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script src="https://kit.fontawesome.com/20192c7fbc.js" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="/ci/css/vendor.css">
+        <link rel="stylesheet" href="<?php echo base_url();?>css/vendor.css">
         <!-- Theme initialization -->
         <script>
             var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
@@ -50,7 +50,7 @@
                                     <a class="dropdown-item" href="admin/settings">
                                         <i class="fa fa-gear icon"></i> Settings </a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/ci/auth/logout">
+                                    <a class="dropdown-item" href="<?php echo base_url();?>auth/logout">
                                         <i class="fa fa-power-off icon"></i> Logout </a>
                                 </div>
                             </li>
