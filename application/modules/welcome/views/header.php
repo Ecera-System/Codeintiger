@@ -22,7 +22,7 @@
     <ul class="navbar-nav ml-auto">
       <?php if(!$this->ion_auth->logged_in()):?>
       	<li class="nav-item active">
-        <a class="nav-link btn px-3 btn-primary" href="<?php echo base_url();?>auth/login">Sign In <span class="sr-only"></span></a>
+        <a class="nav-link btn px-3 btn-primary" href="<?php echo base_url();?>admin/login">Sign In <span class="sr-only"></span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url();?>auth/create_user">Register <span class="sr-only"></span></a>
